@@ -8,6 +8,14 @@
         "env": []
     },
     {
+        "id": "97e28e7c2e339aac",
+        "type": "tab",
+        "label": "Fluxo 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "5d29460ab390aedb",
         "type": "inject",
         "z": "e729c7a6cf4bde16",
@@ -48,8 +56,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 540,
-        "y": 220,
+        "x": 600,
+        "y": 120,
         "wires": []
     },
     {
@@ -71,5 +79,50 @@
                 "dd71305aaa1a9554"
             ]
         ]
+    },
+    {
+        "id": "5dd628ab5be62273",
+        "type": "inject",
+        "z": "97e28e7c2e339aac",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "02a9f92504d25d9f"
+            ]
+        ]
+    },
+    {
+        "id": "02a9f92504d25d9f",
+        "type": "debug",
+        "z": "97e28e7c2e339aac",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 160,
+        "wires": []
     }
 ]
